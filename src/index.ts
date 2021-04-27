@@ -16,3 +16,4 @@ export * from './events/base-producer';
 export * from './events/message-created-event';
 export * from './events/participant-added-event';
 export * from './events/topics';
+export * from './events/group-deleted-event';
