@@ -2,10 +2,12 @@ import { BaseEvent } from './base-event';
 import { Topics } from './topics';
 
 export interface ParticipantAddedEvent extends BaseEvent {
-  topic: Topics.groupCreated;
+  topic: Topics.participantAdded;
   data: {
-    groupId: string;
     username: string;
-    groupName: string;
+    group: {
+      id: string;
+      name: string;
+    };
   };
 }
